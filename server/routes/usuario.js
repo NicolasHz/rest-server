@@ -8,9 +8,7 @@ const Usuario = require('../models/usuario');
 const app = express();
 
 
-app.get('/usuario', function(req, res) {
-
-
+app.get('/usuarios', function(req, res) {
 
     let desde = req.query.desde || 0;
     desde = Number(desde);
